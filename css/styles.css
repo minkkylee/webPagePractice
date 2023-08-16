@@ -4,7 +4,9 @@
     --color-secondary: #00d9ff;
     --color-accent: #ff3400;
     --color-heading: #1b0760;
-    --color-body: #918ca4;
+    --color-body: #918ca4; 
+    --color-border: #ccc;
+    --border-radius: 30px;
 } 
 
 *,
@@ -234,6 +236,43 @@ a {
 
 @media screen and (min-width: 1024px){
     .btn{
+        font-size: 1.5rem;
+    }
+}
+
+/* Input */
+.input {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    color: var(--color-heading);
+    font-size: 2rem;
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+.input-group {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+}
+
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+    margin: 4px;
+}
+
+@media screen and (min-width: 1024px){
+    .input{
         font-size: 1.5rem;
     }
 }
