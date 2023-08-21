@@ -333,6 +333,19 @@ a {
     margin-bottom: 2rem;
 }
 
+.plan--popular {
+    position: relative;
+}
+
+.plan--popular ::before {
+    content: url(../image/popular.svg);
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    right: 5%;
+}
+
 @media screen and (min-width: 1024px){
     .plan__name {
         font-size: 1.4rem;
@@ -349,4 +362,23 @@ a {
     .plan__description {
         font-size: 1.7rem;
     }
+}
+
+/* media object, define size & color later*/
+.media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.media__image{
+    margin-top: 0.5rem;
+}
+
+.media__title {
+    margin-top: 0;
+}
+
+.media__body {
+    margin: 0 2rem;
 }
