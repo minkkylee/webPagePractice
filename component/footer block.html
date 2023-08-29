@@ -1,0 +1,213 @@
+<!-- Footer Block -->
+<footer class="block block--dark footer">
+    <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+            <header class="collapsible__header">
+                <h2 class="collapsible__heading footer__heading">PRODUCTS</h2>
+                <svg class="icon icon--white collapsible__chevron">
+                    <use xlink:href="image/sprite.svg#chevron"></use>
+                </svg>
+            </header>
+            <div class="collapsible__content">
+                <ul class="list">
+                    <li><a href="#">Website Hosting</a></li>
+                    <li><a href="#">Free Automated Wordpress</a></li>
+                    <li><a href="#">Migrations</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="collapsible footer__section">
+            <header class="collapsible__header">
+                <h2 class="collapsible__heading footer__heading">company</h2>
+                <svg class="icon icon--white collapsible__chevron">
+                    <use xlink:href="image/sprite.svg#chevron"></use>
+                </svg>
+            </header>
+            <div class="collapsible__content">
+                <ul class="list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="collapsible footer__section">
+            <header class="collapsible__header">
+                <h2 class="collapsible__heading footer__heading">support</h2>
+                <svg class="icon icon--white collapsible__chevron">
+                    <use xlink:href="image/sprite.svg#chevron"></use>
+                </svg>
+            </header>
+            <div class="collapsible__content">
+                <ul class="list">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Knowledge Base</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="collapsible footer__section">
+            <header class="collapsible__header">
+                <h2 class="collapsible__heading footer__heading">domains</h2>
+                <svg class="icon icon--white collapsible__chevron">
+                    <use xlink:href="image/sprite.svg#chevron"></use>
+                </svg>
+            </header>
+            <div class="collapsible__content">
+                <ul class="list">
+                    <li><a href="#">Domain Checker</a></li>
+                    <li><a href="#">Domain Transfer</a></li>
+                    <li><a href="#">Free Domain</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="footer__brand">
+            <img src="image/logo.svg" alt="">
+            <p class="footer__copyright">Copyright 2020 Mosh Hamedani</p>
+        </section>
+    </div>
+</footer>
+
+
+
+
+
+
+<!-- Footer Block 我的解法: 2-column grid > 4-column gird -->
+<section class="block block--dark block-footer">
+    <div class="container grid grid-1x2">
+        <div class="grid block-footer__content">
+            <div class="collapsible collapsible--expanded block-footer__collapsible">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading">PRODUCTS</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="image/sprite.svg#chevron"></use>
+                    </svg>
+                </header>
+                <ul class="list collapsible__content">
+                    <li class="block-footer__item"><a href="#">WordPress Hosting</a></li>
+                    <li class="block-footer__item"><a href="#">Free Automated WordPress</a></li>
+                </ul>
+            </div>
+
+            <div class="collapsible collapsible--expanded block-footer__collapsible">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading">PRODUCTS</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="image/sprite.svg#chevron"></use>
+                    </svg>
+                </header>
+                <ul class="list collapsible__content">
+                    <li class="block-footer__item"><a href="#">WordPress Hosting</a></li>
+                    <li class="block-footer__item"><a href="#">Free Automated WordPress</a></li>
+                </ul>
+            </div>
+
+            <div class="collapsible collapsible--expanded block-footer__collapsible">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading">PRODUCTS</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="image/sprite.svg#chevron"></use>
+                    </svg>
+                </header>
+                <ul class="list collapsible__content">
+                    <li class="block-footer__item"><a href="#">WordPress Hosting</a></li>
+                    <li class="block-footer__item"><a href="#">Free Automated WordPress</a></li>
+                </ul>
+            </div>
+
+            <div class="collapsible collapsible--expanded  block-footer__collapsible">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading">PRODUCTS</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="image/sprite.svg#chevron"></use>
+                    </svg>
+                </header>
+                <ul class="list collapsible__content">
+                    <li class="block-footer__item"><a href="#">WordPress Hosting</a></li>
+                    <li class="block-footer__item"><a href="#">Free Automated WordPress</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="block-footer__logo">
+            <a href="/"><img class="block-footer__icon" src="image/logo.svg" alt=""></a>
+            <p>Copyright 2020 Mosh Hamedani</p>
+        </div>
+    </div>
+</section>
+
+/*  CSS:  Footer Block */
+.block-footer {
+    background: #232323;
+}
+.block-footer .grid-1x2 {
+    gap: 2rem;
+}
+
+.block-footer__collapsible {
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #222; 
+}
+
+.block-footer__item > a {
+    color:#7b858b;
+    transition: color 0.5s;
+}
+
+.block-footer__item > a:hover {
+    color: #fff;
+}
+
+.block-footer__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .block-footer .grid-1x2 {
+        grid-template-columns: 20% 80%;
+        align-items: start;
+    }
+
+    .block-footer__logo {
+        font-size: 1.5rem;
+        transform: translateY(-10px);
+    }
+
+    .block-footer__icon {
+        width: 100%;
+    }
+
+    .block-footer__content {
+        order: 2;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .block-footer__collapsible {
+        border-bottom: 0;
+        font-size: 1.5rem;
+    }
+    
+    .block-footer__collapsible .collapsible__content {
+        width: auto;
+        max-height: 100%;
+        opacity: 1;
+    }
+
+    .block-footer__collapsible .collapsible__heading{
+        font-size: 1.6rem;
+    }
+
+    .block-footer__collapsible .icon {
+        display: none;
+    }
+}
